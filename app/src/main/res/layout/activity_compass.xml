@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CompassActivity">
+
+    <TextView
+        android:id="@+id/dir_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:layout_marginTop="70dp"/>
+
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/compass_compass_bg">
+        <com.example.ubuntu.mymaxbox.view.MyCompassView
+            android:id="@+id/my_compass_view"
+            android:layout_width="wrap_content"
+            android:layout_height="355dp"/>
+    </FrameLayout>
+
+    <!--<com.example.ubuntu.mymaxbox.view.MyRotateView-->
+        <!--android:id="@+id/my_rotate_view"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <TextView
+        android:id="@+id/position_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"/>
+
+</LinearLayout>
