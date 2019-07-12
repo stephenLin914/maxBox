@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <!--//获取设备网络状态，禁用后无法获取网络状态-->
@@ -22,8 +23,6 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <!--//获取统计数据-->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <!--//使用步行AR导航，配置Camera权限-->
-    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
