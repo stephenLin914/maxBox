@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProtractorActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextureView
+        android:id="@+id/protractor_camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"></FrameLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_gravity="right"
+            android:src="@drawable/tool_protractor_bg1"/>
+    </LinearLayout>
+    <com.example.ubuntu.mymaxbox.view.ProtractorView
+        android:id="@+id/protractor1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:k="-0.9"/>
+    <com.example.ubuntu.mymaxbox.view.ProtractorView
+        android:id="@+id/protractor2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:k="0.9"/>
+    <com.example.ubuntu.mymaxbox.view.ProtractorValueView
+        android:id="@+id/protractor_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/protractor_camera_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/btn_mir_cam_normal"/>
+
+</RelativeLayout>
