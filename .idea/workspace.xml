@@ -109,6 +109,15 @@
         <option name="packageNamePattern" value="" />
         <option name="pid" value="" />
       </filter>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagIsRegex" value="false" />
+        <option name="logTagPattern" value="UnitActivity" />
+        <option name="name" value="UnitActivity" />
+        <option name="packageNamePattern" value="" />
+        <option name="pid" value="" />
+      </filter>
     </filters>
   </component>
   <component name="AndroidLayouts">
@@ -117,7 +126,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="ProtractorValueView" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="UnitActivity" />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -126,12 +135,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7a46544-8cab-4ff3-aaac-48a221277982" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/ProtractorValueView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/ProtractorView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/RulerView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tool_protractor_bg1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tool_protractro_paint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/adapter/SpinnerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/adapter/UnitAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/adapter/UnitListAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/entity/Unit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/entity/UnitListItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/entity/UnitType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner.9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_area.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_data.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_gvew_item_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_gvew_item_selected_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_length.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_pressure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_radioactivity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_speed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_temperature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_time.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_volume.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_weight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/spinner_drop_down.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/spinner_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/unit_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/unit_list_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
@@ -140,13 +167,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/ProtractorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/ProtractorActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/RulerBackView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/RulerBackView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tool_ruler_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tool_rulerbg.9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_protractor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_protractor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_scale.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_scale.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/UnitActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/UnitActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_unit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_unit.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -170,31 +192,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UnitActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UnitActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/UnitActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+            <state relative-caret-position="541">
+              <caret line="177" column="31" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4578#4579#0" expanded="true" />
+                <element signature="e#4646#4647#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_unit.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UnitAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/adapter/UnitAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="70" selection-start-line="70" selection-end-line="73" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2049#2700#0" expanded="true" />
+                <element signature="e#2699#2700#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_unit.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_unit.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="247">
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="com.huaqin.maxbox_2019.07.17_13.57-1.li" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/captures/com.huaqin.maxbox_2019.07.17_13.57-1.li">
-          <provider selected="true" editor-type-id="capture-editor">
+      <file leaf-file-name="UnitType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/entity/UnitType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <folding>
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="unit_item.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/unit_item.xml">
+          <provider editor-type-id="android-designer2">
             <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spinner_item.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_item.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -204,14 +276,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
+        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>previewSize</find>
-      <find>matric</find>
       <find>magnifier_camera</find>
       <find>maxzoom</find>
       <find>onProgressChanged</find>
@@ -240,6 +312,8 @@
       <find>check</find>
       <find>viewPager</find>
       <find>set</find>
+      <find>viewHolder</find>
+      <find>position</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2504,19 +2578,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/listener/MyLedClickListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/MyLedView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/android/Intents.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/camera/CameraConfigurationUtils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/encode/CodeCreator.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/ViewfinderResultPointCallback.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/decode/DecodeHandler.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/ViewfinderView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/android/CaptureActivityHandler.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/decode/DecodeThread.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/camera/CameraConfigurationManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/camera/AutoFocusManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/decode/DecodeFormatManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/android/BeepManager.java" />
@@ -2536,7 +2597,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/MyGradienterView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/CompassActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_compass.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/MyCompassView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/MyRotateView.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_flash_light.xml" />
@@ -2554,7 +2614,21 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/MirrorActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_protractor.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/ProtractorActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/MyCompassView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/entity/UnitType.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/entity/Unit.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/adapter/SpinnerAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/spinner_background.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/spinner_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/spinner_drop_down.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/entity/UnitListItem.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/unit_list_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/adapter/UnitListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/unit_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/adapter/UnitAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_unit.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/UnitActivity.java" />
       </list>
     </option>
   </component>
@@ -2569,8 +2643,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -2621,7 +2695,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mymaxbox" type="462c0819:PsiDirectoryNode" />
+              <item name="adapter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyMaxBox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyMaxBox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mymaxbox" type="462c0819:PsiDirectoryNode" />
               <item name="camera" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyMaxBox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyMaxBox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mymaxbox" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyMaxBox" type="b2602c69:ProjectViewProjectNode" />
@@ -2650,6 +2744,15 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyMaxBox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyMaxBox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="drawable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyMaxBox" type="b2602c69:ProjectViewProjectNode" />
@@ -2716,7 +2819,7 @@
     <property name="SHOW_ALL_PROCESSES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="activity_scale&#9;PSI&#9;JAVA://com.example.ubuntu.mymaxbox.R.layout#activity_scale&#10;ImageView&#9;PSI&#9;JAVA://android.widget.ImageView&#10;Cap&#9;FILE&#9;file:///home/ubuntu/AndroidStudioProjects/MyMaxBox/app/src/main/java/com/example/ubuntu/mymaxbox/android/CaptureActivity.java" />
     <property name="android.sdk.path" value="$USER_HOME$/dev/android/android-sdk-linux" />
-    <property name="device.picker.selection" value="6612c675" />
+    <property name="device.picker.selection" value="0123456789ABCDEF" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../level/Level" />
   </component>
   <component name="RecentsManager">
@@ -2881,13 +2984,12 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.36554623" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Logcat" order="7" weight="0.32352942" />
+      <window_info anchor="bottom" id="Logcat" order="7" weight="0.4327731" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989518" visible="true" weight="0.18926397" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989518" visible="true" weight="0.18705036" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32878152" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32914045" />
       <window_info anchor="right" id="Gradle" order="6" />
       <window_info id="Structure" order="1" sideWeight="0.5010482" side_tool="true" weight="0.24958494" />
       <window_info anchor="right" id="Device File Explorer" order="8" side_tool="true" weight="0.18871057" />
@@ -2901,6 +3003,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24958494" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32914045" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -2955,159 +3058,23 @@
           <properties />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/adapter/SpinnerAdapter.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/adapter/UnitAdapter.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="22" />
+      <option name="time" value="34" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="76" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/dev/android/android-sdk-linux/sources/android-28/android/media/ImageReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="130" column="30" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/qualcomm-mh4-0123456789ABCDEF/sdcard/DCIM/Camera/14348921013.jpg" />
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/qualcomm-mh4-0123456789ABCDEF/sdcard/DCIM/Camera/14348922792.jpg" />
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/qualcomm-mh4-0123456789ABCDEF/sdcard/DCIM/Camera/14348924213.jpg" />
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/qualcomm-mh4-0123456789ABCDEF/sdcard/DCIM/Camera/14348991985.jpg" />
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/qualcomm-mh4-0123456789ABCDEF/sdcard/DCIM/Camera/14348997546.jpg" />
-    <entry file="file://$USER_HOME$/AndroidStudio/DeviceExplorer/qualcomm-mh4-0123456789ABCDEF/sdcard/DCIM/Camera/14349095945.jpg" />
-    <entry file="file://$USER_HOME$/dev/android/android-sdk-linux/sources/android-28/android/hardware/camera2/CameraManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="444" column="69" selection-start-line="444" selection-start-column="19" selection-end-line="444" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/dev/android/android-sdk-linux/sources/android-28/android/graphics/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="485" column="19" selection-start-line="485" selection-start-column="19" selection-end-line="485" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/dev/android/android-sdk-linux/sources/android-28/android/view/TextureView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="482" column="16" selection-start-line="482" selection-start-column="16" selection-end-line="482" selection-end-column="16" />
-          <folding>
-            <element signature="e#24629#24630#0" expanded="true" />
-            <element signature="e#24660#24661#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_mirror.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="39" selection-start-line="39" selection-end-line="46" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/camera/CameraManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="347" selection-start-line="347" selection-end-line="347" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/dev/android/android-sdk-linux/sources/android-28/android/hardware/camera2/CameraMetadata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="1397" column="28" selection-start-line="1397" selection-start-column="28" selection-end-line="1397" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/FlashLightActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/MagnifierActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="417" column="55" selection-start-line="417" selection-start-column="55" selection-end-line="417" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4181#4182#0" expanded="true" />
-            <element signature="e#4219#4220#0" expanded="true" />
-            <element signature="e#4788#6362#0" expanded="true" />
-            <element signature="e#6361#6362#0" expanded="true" />
-            <element signature="e#14541#14542#0" expanded="true" />
-            <element signature="e#14573#14574#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_magnifier.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/MyRotateView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tool_ruler_bg.9.png" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/tool_rulerbg.9.png">
-      <provider selected="true" editor-type-id="ninepatcheditor">
-        <state />
-      </provider>
-      <provider editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/com/example/ubuntu/mymaxbox/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="5531" column="38" selection-start-line="5531" selection-start-column="38" selection-end-line="5531" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/ScaleActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -3316,16 +3283,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/UnitActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/captures/com.huaqin.maxbox_2019.07.17_13.57.li">
       <provider selected="true" editor-type-id="capture-editor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/view/MyCompassView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/captures/com.huaqin.maxbox_2019.07.17_13.57-1.li">
@@ -3333,13 +3300,214 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1678" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/dev/android/android-sdk-linux/sources/android-28/android/view/ViewGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="6674" column="16" selection-start-line="6674" selection-start-column="16" selection-end-line="6674" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/adapter/SpinnerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="38" column="75" selection-start-line="38" selection-start-column="75" selection-end-line="38" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/entity/Unit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/spinner_background.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/spinner_back.9.png" />
+    <entry file="file://$USER_HOME$/dev/android/android-sdk-linux/sources/android-28/android/widget/EditText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/dev/android/android-sdk-linux/platforms/android-28/data/res/layout/simple_list_item_1.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="24" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/entity/UnitListItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/adapter/UnitListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/dev/android/android-sdk-linux/sources/android-28/android/view/LayoutInflater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="228" column="89" selection-start-line="228" selection-start-column="66" selection-end-line="228" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_drop_down.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/unit_list_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/dev/android/android-sdk-linux/platforms/android-28/data/res/layout/simple_spinner_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/entity/UnitType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/unit_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/unitconverter_gvew_item_selected_background.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/f14695e3c334e97e92883aec1eea7246/jars/classes.jar!/android/support/v7/app/AppCompatActivity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="125" column="30" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/dev/android/android-sdk-linux/sources/android-28/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="6294" selection-start-line="6294" selection-end-line="6294" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/adapter/UnitAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="70" selection-start-line="70" selection-end-line="73" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2049#2700#0" expanded="true" />
+            <element signature="e#2699#2700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_unit.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="247">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/ubuntu/mymaxbox/UnitActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="177" column="31" selection-start-line="177" selection-start-column="31" selection-end-line="177" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4578#4579#0" expanded="true" />
+            <element signature="e#4646#4647#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

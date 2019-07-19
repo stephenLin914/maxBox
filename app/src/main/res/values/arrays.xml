@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="length_unit">
+        <item>mm</item>
+        <item>cm</item>
+        <item>m</item>
+        <item>km</item>
+        <item>yd</item>
+        <item>ft</item>
+        <item>inch</item>
+        <item>mile</item>
+        <item>尺</item>
+        <item>寸</item>
+        <item>丈</item>
+        <item>里</item>
+        <item>海里</item>
+    </string-array>
+</resources>
