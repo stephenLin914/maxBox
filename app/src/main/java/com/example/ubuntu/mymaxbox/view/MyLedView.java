@@ -5,14 +5,21 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.BitmapShader;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.Paint;
+import android.graphics.PorterDuff;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.BitmapDrawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.example.ubuntu.mymaxbox.R;
+
+import java.util.concurrent.TimeUnit;
 
 public class MyLedView extends android.support.v7.widget.AppCompatImageView {
     private static final String TAG = "MyLedView";
@@ -23,6 +30,18 @@ public class MyLedView extends android.support.v7.widget.AppCompatImageView {
     private RectF drawableRect;
     private Shader shader;
     private Bitmap img;
+
+    private int[] drawPosXData;
+
+    public void setDrawPosXData(int[] drawPosXData) {
+        this.drawPosXData = drawPosXData;
+    }
+
+    public void setDrawPosYData(int[] drawPosYData) {
+        this.drawPosYData = drawPosYData;
+    }
+
+    private int[] drawPosYData;
 
     public MyLedView(Context context) {
         super(context);
@@ -42,21 +61,67 @@ public class MyLedView extends android.support.v7.widget.AppCompatImageView {
 
     @Override
     protected void onDraw(Canvas canvas) {
-        if( ledRes==null ) {
-            super.onDraw(canvas);
+//        if( ledRes==null ) {
+//            super.onDraw(canvas);
+//            return;
+//        }
+//        String name = (String) ledRes.getTag();
+//        BitmapDrawable drawable = (BitmapDrawable) ledRes.getDrawable();
+//        img = drawable.getBitmap();
+//
+//        prepareDrawing();
+        if( drawPosXData==null || drawPosYData==null ) {
             return;
         }
-        String name = (String) ledRes.getTag();
-        BitmapDrawable drawable = (BitmapDrawable) ledRes.getDrawable();
-        img = drawable.getBitmap();
-
-        prepareDrawing();
-
-        switch (name) {
-            case "狗头" :
-                canvas.drawRect(drawableRect, paint);
-//            canvas.drawBitmap(img, 30f, 30f, paint);
+        Bitmap ledDot = BitmapFactory.decodeResource(getResources(), R.drawable.led_dot2);
+        float ledWidth = 40;
+        float ledHeight = 40;
+        for (int i=0; i<drawPosXData.length; ++i ) {
+            canvas.drawBitmap(ledDot, ledWidth*drawPosXData[i], ledHeight*drawPosYData[i], paint);
         }
+//        Log.d(TAG, "ledWidth：" + ledWidth + " ledHeight:" + ledHeight);
+//        switch (name) {
+//            case "狗头" :
+//                canvas.drawRect(drawableRect, paint);
+//                break;
+////            canvas.drawBitmap(img, 30f, 30f, paint);
+//            case "心":
+//                try {
+////                    while( true ) {
+//                        for( int i=0; i<heartPosX1.length; ++i ) {
+//                            float left = ledWidth*heartPosX1[i];
+//                            float top = ledHeight*heartPoxY1[i];
+//                            Log.d(TAG, "left: " + left + " top: " + top);
+//                            canvas.drawBitmap(ledDot, left, top, paint);
+//                        }
+//                        Thread.sleep(5000);
+////                        TimeUnit.MILLISECONDS.sleep(1000);
+//                        for( int i=0; i<heartPosX2.length; ++i ) {
+//                            float left = ledWidth*heartPosX2[i];
+//                            float top = ledHeight*heartPoxY2[i];
+//                            canvas.drawBitmap(ledDot, left, top, paint);
+//                        }
+//                        Thread.sleep(5000);
+//                        for( int i=0; i<heartPosX3.length; ++i ) {
+//                            float left = ledWidth*heartPosX3[i];
+//                            float top = ledHeight*heartPoxY3[i];
+//                            canvas.drawBitmap(ledDot, left, top, paint);
+//                        }
+//                        Thread.sleep(5000);
+//                        for( int i=0; i<heartPosX4.length; ++i ) {
+//                            float left = ledWidth*heartPosX4[i];
+//                            float top = ledHeight*heartPoxY4[i];
+//                            canvas.drawBitmap(ledDot, left, top, paint);
+//                        }
+////                        TimeUnit.MILLISECONDS.sleep(1000);
+////                        canvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
+////                        TimeUnit.MILLISECONDS.sleep(1000);
+////                    }
+//                } catch (Exception e) {
+//                    e.printStackTrace();
+//                }
+//                break;
+//        }
     }
 
     private void prepareDrawing() {
