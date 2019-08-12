@@ -3,11 +3,14 @@ package com.example.ubuntu.mymaxbox;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -86,6 +89,16 @@ public class UnitActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_unit);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        ActionBar actionBar = getSupportActionBar();
+        //在Toolbar中加入滑动菜单提示按钮
+        if( actionBar!=null ) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("单位换位");
+        }
 
         initData();
 
@@ -186,4 +199,13 @@ public class UnitActivity extends AppCompatActivity {
         unitData.add(lengthData);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {//HomeAsUp的点击事件，返回箭头按钮
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

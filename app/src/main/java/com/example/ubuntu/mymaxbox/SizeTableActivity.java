@@ -3,9 +3,12 @@ package com.example.ubuntu.mymaxbox;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -119,6 +122,16 @@ public class SizeTableActivity extends AppCompatActivity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_size_table);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        ActionBar actionBar = getSupportActionBar();
+        //在Toolbar中加入滑动菜单提示按钮
+        if( actionBar!=null ) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("尺码表");
+        }
 
         initData();
         mLayoutInflater = LayoutInflater.from(this);
@@ -236,5 +249,15 @@ public class SizeTableActivity extends AppCompatActivity implements View.OnClick
             default:
                 break;
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {//HomeAsUp的点击事件，返回箭头按钮
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

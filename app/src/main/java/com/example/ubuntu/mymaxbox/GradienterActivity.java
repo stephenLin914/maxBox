@@ -7,8 +7,11 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -37,6 +40,16 @@ public class GradienterActivity extends AppCompatActivity implements SensorEvent
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gradienter);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        ActionBar actionBar = getSupportActionBar();
+        //在Toolbar中加入滑动菜单提示按钮
+        if( actionBar!=null ) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("水平仪");
+        }
 
         gradienterView = findViewById(R.id.myGradienterView);
         //获取传感器
@@ -171,4 +184,13 @@ public class GradienterActivity extends AppCompatActivity implements SensorEvent
         super.onPause();
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {//HomeAsUp的点击事件，返回箭头按钮
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

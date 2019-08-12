@@ -11,8 +11,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -47,6 +50,16 @@ public class CompassActivity extends AppCompatActivity implements SensorEventLis
         mLocationClient.registerLocationListener(new MyLocationListener());
 
         setContentView(R.layout.activity_compass);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        ActionBar actionBar = getSupportActionBar();
+        //在Toolbar中加入滑动菜单提示按钮
+        if( actionBar!=null ) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setTitle("指南针");
+        }
 
         compassView = findViewById(R.id.my_compass_view);
         dirTextView = findViewById(R.id.dir_name);
@@ -205,5 +218,15 @@ public class CompassActivity extends AppCompatActivity implements SensorEventLis
             default:
                 break;
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {//HomeAsUp的点击事件，返回箭头按钮
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
